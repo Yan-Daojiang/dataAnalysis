@@ -32,7 +32,7 @@ if __name__ == '__main__':
     y = np.array(cols_2[1:])
     #调用拟合函数得到结果
     ans = linearfit(x, y)
-    print("得到的拟合直线方程为:\t" + "y=" + str(ans[(0, 0)]) + str(ans[(1, 0)]) + "*x")
+    print("得到的拟合直线方程为:\t" + "y=" + str(ans[(0, 0)])+"+(" + str(ans[(1, 0)]) + "*x)")
     #绘制图像
     x_ = np.arange(0, 8, 1)
     y_ = ans[(0, 0)] + ans[(1, 0)] * x_
