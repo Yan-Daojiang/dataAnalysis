@@ -43,5 +43,4 @@ if __name__=='__main__':
     num =3                      # 方程未知数的个数
     x = np.ones((num),dtype=float)#初始值
     a = Newton(x,num)
-
     print(a)
